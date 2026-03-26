@@ -180,5 +180,3 @@ Exact filenames depend on which stages were executed.
   url={https://arxiv.org/pdf/2512.24731}
 }
 ```
-
-# EchoFoley
