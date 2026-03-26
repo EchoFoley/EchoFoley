@@ -1,0 +1,1 @@
+audio-aes /home/jovyan/workspace/eval/evaluation/sound_generation/metrics/AES/path_list.jsonl --batch-size 10 > /home/jovyan/workspace/eval/evaluation/sound_generation/metrics/AES/output.jsonl
