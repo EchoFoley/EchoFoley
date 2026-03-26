@@ -156,14 +156,10 @@ Exact filenames depend on which stages were executed.
    - `src/video_understanding.py` creates `AzureOpenAI(... api_key="")`.
    - You must replace the placeholder key or refactor `t2t_generate`/`v2t_generate` to pull keys from environment variables.
 
-3. **`ModuleNotFoundError: logid`**
-   - Some modules import `logid` but it is not present in this repo.
-   - If you only need request IDs for logging, replace `logid.generate()` with something like `uuid.uuid4().hex` or install the correct internal package for your environment.
-
-4. **ffmpeg errors**
+3. **ffmpeg errors**
    - `moviepy` and `pydub` require system `ffmpeg` for encoding/decoding.
 
-5. **GPU / CUDA issues**
+4. **GPU / CUDA issues**
    - Stable Audio runs on `cuda:0` if available; otherwise it runs on CPU.
    - For practical runtime, use a CUDA-capable machine.
 
